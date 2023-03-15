@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
         integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,34 +19,8 @@
 <body>
 
     <!-- Just an image -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./imgs/kar24.png" width="100%" height="30" alt="">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">اضف عملك</a>
-                </li>
-
-
-            </ul>
-
-        </div>
-
-    </nav>
-
     <div class="jumbotron">
-        <img src="./imgs/kar24.png" class="img-fluid" width="50%">
+        <img src="./imgs/LOGO PNG 03.png" class="img-fluid" width="50%">
         <p class="lead" id="demo"></p>
         <hr class="my-4">
         <form class="form-inline">
@@ -63,189 +38,384 @@
                 <option value="3">Three</option>
             </select>
 
-
             <button type="submit" class="btn btn-primary my-1 col-md-2">بحـــث</button>
+            <button class="btn btn-outline-secondary mr-2" onclick="openSearch()">
+                <i class="fas fa-search"></i>
+            </button>
         </form>
-        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز</p>
-        <button type="button" class="btn btn-primary btn-lg text-center" id="more">استكشف
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">حلاق</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">نجار</h2>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">سباك</h2>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">كهربائي</h2>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">نقاش</h2>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">نجار</h2>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">نجار</h2>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">نجار</h2>
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" onclick="goto('https://google.com')">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <i class="fas fa-user fa-3x mt-4 "></i>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">نجار</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <button type="button" class="btn btn-primary btn-lg text-center" id="more"><i class="fas fa-caret-down"></i>
+            استكشف
             المزيد</button>
+        <button class="btn btn-primary"><i class="fas fa-plus"></i> اضف عملك</button>
+
     </div>
     <div id="products">
         <div class="container d-flex justify-content-center">
-            <figure class="card card-product-grid mr-3 card-lg"> <a href="#" class="img-wrap" data-abc="true"> <img
-                        src="./imgs/home2.jpg"> </a>
+            <figure class="card card-product-grid mr-3 card-lg">
+                <a href="./productdetails.html#product" class="img-wrap" data-abc="true">
+                    <img src="./imgs/home2.jpg"> </a>
                 <figcaption class="info-wrap">
                     <div class="row">
-                        <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">ادوات منزلية</a> <span
-                                class="rated">عامودا</span> </div>
-                        <div class="col-md-3 col-xs-3">
-                            <div class="rating text-right"> <i class="fa fa-star"></i> <span class="rated">Rated
-                                    4.0/5</span> </div>
+                        <div class="col-md-8 col-xs-8">
+                            <a href="./productdetails.html#product" class="title" data-abc="true">ادوات منزلية</a>
+                            <span class="rated"></span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="rating text-right">
+                                <i class="fas fa-code-branch"></i> ديكور
+                            </div>
                         </div>
                     </div>
                 </figcaption>
                 <div class="bottom-wrap-payment">
                     <figcaption class="info-wrap">
                         <div class="row">
-                            <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">0998334721</a>
-                                <span class="rated">الهاتف</span> </div>
-                            <div class="col-md-3 col-xs-3">
-                                <div class="rating text-right"> ديكور </div>
+                            <div class="col-md-8 col-xs-8">
+                                <a href="tel:01090406649" class="title" data-abc="true">
+                                    <i class="fas fa-mobile-alt"></i> 01090406649</a>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="rating text-right">
+                                    <i class="fas fa-map-marker-alt"></i> عامودا </div>
                             </div>
                         </div>
                     </figcaption>
                 </div>
-                <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" data-abc="true"> تفاصيل </a>
+                <div class="bottom-wrap">
+                    <a href="./productdetails.html#product" class="btn btn-primary float-left" data-abc="true"> تفاصيل
+                    </a>
                     <div class="price-wrap">
                     </div>
                 </div>
             </figure>
 
-            <figure class="card card-product-grid mr-3 card-lg"> <a href="#" class="img-wrap" data-abc="true"> <img
-                        src="./imgs/mobile1.jpeg"> </a>
+            <figure class="card card-product-grid mr-3 card-lg">
+                <a href="./productdetails.html#product" class="img-wrap" data-abc="true">
+                    <img src="./imgs/home2.jpg"> </a>
                 <figcaption class="info-wrap">
                     <div class="row">
-                        <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">ساريك للاتصالات</a>
-                            <span class="rated">القامشلي</span> </div>
-                        <div class="col-md-3 col-xs-3">
-                            <div class="rating text-right"> <i class="fa fa-star"></i> <span class="rated">Rated
-                                    4.0/5</span> </div>
+                        <div class="col-md-8 col-xs-8">
+                            <a href="./productdetails.html#product" class="title" data-abc="true">ادوات منزلية</a>
+                            <span class="rated"></span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="rating text-right">
+                                <i class="fas fa-code-branch"></i> ديكور
+                            </div>
                         </div>
                     </div>
                 </figcaption>
                 <div class="bottom-wrap-payment">
                     <figcaption class="info-wrap">
                         <div class="row">
-                            <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">0998334721</a>
-                                <span class="rated">الهاتف</span> </div>
-                            <div class="col-md-3 col-xs-3">
-                                <div class="rating text-right"> كومبيوتر </div>
+                            <div class="col-md-8 col-xs-8">
+                                <a href="tel:01090406649" class="title" data-abc="true">
+                                    <i class="fas fa-mobile-alt"></i> 01090406649</a>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="rating text-right">
+                                    <i class="fas fa-map-marker-alt"></i> عامودا </div>
                             </div>
                         </div>
                     </figcaption>
                 </div>
-                <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" data-abc="true"> تفاصيل </a>
+                <div class="bottom-wrap">
+                    <a href="./productdetails.html#product" class="btn btn-primary float-left" data-abc="true"> تفاصيل
+                    </a>
                     <div class="price-wrap">
                     </div>
                 </div>
             </figure>
-            <figure class="card card-product-grid mr-3 card-lg"> <a href="#" class="img-wrap" data-abc="true"> <img
-                        src="./imgs/105388601_956833768111836_7499188567680325868_n.jpg"> </a>
+            <figure class="card card-product-grid mr-3 card-lg">
+                <a href="#" class="img-wrap" data-abc="true">
+                    <img src="./imgs/home2.jpg"> </a>
                 <figcaption class="info-wrap">
                     <div class="row">
-                        <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">مكتبة رودي وبروين </a>
-                            <span class="rated">كوباني</span> </div>
-                        <div class="col-md-3 col-xs-3">
-                            <div class="rating text-right"> <i class="fa fa-star"></i> <span class="rated">Rated
-                                    4.0/5</span> </div>
+                        <div class="col-md-8 col-xs-8">
+                            <a href="#" class="title" data-abc="true">ادوات منزلية</a>
+                            <span class="rated"></span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="rating text-right">
+                                <i class="fas fa-code-branch"></i> ديكور
+                            </div>
                         </div>
                     </div>
                 </figcaption>
                 <div class="bottom-wrap-payment">
                     <figcaption class="info-wrap">
                         <div class="row">
-                            <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">0998334721</a>
-                                <span class="rated">الهاتف</span> </div>
-                            <div class="col-md-3 col-xs-3">
-                                <div class="rating text-right"> مكتبات </div>
+                            <div class="col-md-8 col-xs-8">
+                                <a href="tel:01090406649" class="title" data-abc="true">
+                                    <i class="fas fa-mobile-alt"></i> 01090406649</a>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="rating text-right">
+                                    <i class="fas fa-map-marker-alt"></i> عامودا </div>
                             </div>
                         </div>
                     </figcaption>
                 </div>
-                <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" data-abc="true"> تفاصيل </a>
+                <div class="bottom-wrap">
+                    <a href="#" class="btn btn-primary float-left" data-abc="true"> تفاصيل </a>
                     <div class="price-wrap">
                     </div>
                 </div>
             </figure>
         </div>
         <div class="container d-flex justify-content-center">
-            <figure class="card card-product-grid mr-3 card-lg"> <a href="#" class="img-wrap" data-abc="true"> <img
-                        src="./imgs/home2.jpg"> </a>
+            <figure class="card card-product-grid mr-3 card-lg">
+                <a href="./productdetails.html#product" class="img-wrap" data-abc="true">
+                    <img src="./imgs/home2.jpg"> </a>
                 <figcaption class="info-wrap">
                     <div class="row">
-                        <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">ادوات منزلية</a> <span
-                                class="rated">عامودا</span> </div>
-                        <div class="col-md-3 col-xs-3">
-                            <div class="rating text-right"> <i class="fa fa-star"></i> <span class="rated">Rated
-                                    4.0/5</span> </div>
+                        <div class="col-md-8 col-xs-8">
+                            <a href="#" class="title" data-abc="true">ادوات منزلية</a>
+                            <span class="rated"></span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="rating text-right">
+                                <i class="fas fa-code-branch"></i> ديكور
+                            </div>
                         </div>
                     </div>
                 </figcaption>
                 <div class="bottom-wrap-payment">
                     <figcaption class="info-wrap">
                         <div class="row">
-                            <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">0998334721</a>
-                                <span class="rated">الهاتف</span> </div>
-                            <div class="col-md-3 col-xs-3">
-                                <div class="rating text-right"> ديكور </div>
+                            <div class="col-md-8 col-xs-8">
+                                <a href="tel:01090406649" class="title" data-abc="true">
+                                    <i class="fas fa-mobile-alt"></i> 01090406649</a>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="rating text-right">
+                                    <i class="fas fa-map-marker-alt"></i> عامودا </div>
                             </div>
                         </div>
                     </figcaption>
                 </div>
-                <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" data-abc="true"> تفاصيل </a>
+                <div class="bottom-wrap">
+                    <a href="./productdetails.html#product" class="btn btn-primary float-left" data-abc="true"> تفاصيل
+                    </a>
                     <div class="price-wrap">
                     </div>
                 </div>
             </figure>
 
-            <figure class="card card-product-grid mr-3 card-lg"> <a href="#" class="img-wrap" data-abc="true"> <img
-                        src="./imgs/mobile1.jpeg"> </a>
+            <figure class="card card-product-grid mr-3 card-lg">
+                <a href="./productdetails.html#product" class="img-wrap" data-abc="true">
+                    <img src="./imgs/home2.jpg"> </a>
                 <figcaption class="info-wrap">
                     <div class="row">
-                        <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">ساريك للاتصالات</a>
-                            <span class="rated">القامشلي</span> </div>
-                        <div class="col-md-3 col-xs-3">
-                            <div class="rating text-right"> <i class="fa fa-star"></i> <span class="rated">Rated
-                                    4.0/5</span> </div>
+                        <div class="col-md-8 col-xs-8">
+                            <a href="#" class="title" data-abc="true">ادوات منزلية</a>
+                            <span class="rated"></span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="rating text-right">
+                                <i class="fas fa-code-branch"></i> ديكور
+                            </div>
                         </div>
                     </div>
                 </figcaption>
                 <div class="bottom-wrap-payment">
                     <figcaption class="info-wrap">
                         <div class="row">
-                            <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">0998334721</a>
-                                <span class="rated">الهاتف</span> </div>
-                            <div class="col-md-3 col-xs-3">
-                                <div class="rating text-right"> كومبيوتر </div>
+                            <div class="col-md-8 col-xs-8">
+                                <a href="tel:01090406649" class="title" data-abc="true">
+                                    <i class="fas fa-mobile-alt"></i> 01090406649</a>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="rating text-right">
+                                    <i class="fas fa-map-marker-alt"></i> عامودا </div>
                             </div>
                         </div>
                     </figcaption>
                 </div>
-                <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" data-abc="true"> تفاصيل </a>
+                <div class="bottom-wrap">
+                    <a href="./productdetails.html#product" class="btn btn-primary float-left" data-abc="true"> تفاصيل
+                    </a>
                     <div class="price-wrap">
                     </div>
                 </div>
             </figure>
-            <figure class="card card-product-grid mr-3 card-lg"> <a href="#" class="img-wrap" data-abc="true"> <img
-                        src="./imgs/105388601_956833768111836_7499188567680325868_n.jpg"> </a>
+            <figure class="card card-product-grid mr-3 card-lg">
+                <a href="./productdetails.html#product" class="img-wrap" data-abc="true">
+                    <img src="./imgs/home2.jpg"> </a>
                 <figcaption class="info-wrap">
                     <div class="row">
-                        <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">مكتبة رودي وبروين </a>
-                            <span class="rated">كوباني</span> </div>
-                        <div class="col-md-3 col-xs-3">
-                            <div class="rating text-right"> <i class="fa fa-star"></i> <span class="rated">Rated
-                                    4.0/5</span> </div>
+                        <div class="col-md-8 col-xs-8">
+                            <a href="./productdetails.html#product" class="title" data-abc="true">ادوات منزلية</a>
+                            <span class="rated"></span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <div class="rating text-right">
+                                <i class="fas fa-code-branch"></i> ديكور
+                            </div>
                         </div>
                     </div>
                 </figcaption>
                 <div class="bottom-wrap-payment">
                     <figcaption class="info-wrap">
                         <div class="row">
-                            <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">0998334721</a>
-                                <span class="rated">الهاتف</span> </div>
-                            <div class="col-md-3 col-xs-3">
-                                <div class="rating text-right"> مكتبات </div>
+                            <div class="col-md-8 col-xs-8">
+                                <a href="tel:01090406649" class="title" data-abc="true">
+                                    <i class="fas fa-mobile-alt"></i> 01090406649</a>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="rating text-right">
+                                    <i class="fas fa-map-marker-alt"></i> عامودا </div>
                             </div>
                         </div>
                     </figcaption>
                 </div>
-                <div class="bottom-wrap"> <a href="#" class="btn btn-primary float-right" data-abc="true"> تفاصيل </a>
+                <div class="bottom-wrap">
+                    <a href="./productdetails.html#product" class="btn btn-primary float-left" data-abc="true"> تفاصيل
+                    </a>
                     <div class="price-wrap">
                     </div>
                 </div>
             </figure>
         </div>
-
 
     </div>
 
@@ -275,7 +445,7 @@
         <hr class="mt-0">
         <!--Social buttons-->
         <div class="text-center">
-            <h4>You can find us at</h4>
+            <h4>يمكنك العثور علينا</h4>
             <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
                     <a href="#!" class="sbtn btn-large mx-1" title="Facebook">
@@ -299,107 +469,27 @@
                 </li>
             </ul>
         </div>
-        <!--/.Social buttons-->
-        <hr class="mb-0">
-        <!--Footer Links-->
-        <div class="container text-right text-md-center">
-            <div class="row">
-                <!--First column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Product</h5>
-                    <div class="d-md-none title" data-target="#Product" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Product
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Product">
-                        <li><a href="#">Create Websites</a></li>
-                        <li><a href="#">Secure Cloud Hosting</a></li>
-                        <li><a href="#">Engage Your Audience</a></li>
-                        <li><a href="#">Website Support</a></li>
-                    </ul>
-                </div>
-                <!--/.First column-->
-                <hr class="clearfix w-100 d-md-none mb-0">
-                <!--Second column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Company</h5>
-                    <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Company
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Company">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <!--/.Second column-->
-                <hr class="clearfix w-100 d-md-none mb-0">
-                <!--Third column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Resources</h5>
-                    <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Resources
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Resources">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">eBooks</a></li>
-                        <li><a href="#">Whitepapers</a></li>
-                        <li><a href="#">Comparison Guide</a></li>
-                        <li><a href="#">Website Grader</a></li>
-                    </ul>
-                </div>
-                <!--/.Third column-->
-                <hr class="clearfix w-100 d-md-none mb-0">
-                <!--Fourth column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Get Help</h5>
-                    <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Get Help
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Get-Help">
-                        <li><a href="#" target="_blank">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Login</a></li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
-            </div>
-        </div>
+
         <!--/.Footer Links-->
         <hr class="mb-0">
         <!--Copyright-->
         <div class="py-3 text-center">
-            Copyright
+            جميع الحقوق محفوظة
             <script>
                 document.write(new Date().getFullYear())
-            </script> <a href="#"></a> | It is free for use
+            </script>
         </div>
         <!--/.Copyright-->
     </footer>
-
+    <div id="myOverlay" class="overlay1">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="#" class="">
+                <input class="form-control" type="text" placeholder="بحـــث ..." name="search">
+                <button class="btn btn-primary" type="submit"><i class="fas fa-search text-white"></i></button>
+            </form>
+        </div>
+    </div>
 
     <script src="./jquery-3.1.0.js" crossorigin="anonymous">
     </script>
@@ -411,6 +501,58 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            Infinity: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                prevEl: ".swiper-button-next",
+                nextEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 5,
+                },
+            },
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+
+        });
+
+
+        function goto(e) {
+            window.location = e;
+        }
+
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
